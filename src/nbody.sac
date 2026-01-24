@@ -106,7 +106,7 @@ int main()
     }
 
     sec2, nsec2 = MTClock::gettime();
-    printf("This took %fs\n", MTClock::timediff(sec1, nsec1, sec2, nsec2));
+    printf("This took %ds\n", MTClock::timediff(sec1, nsec1, sec2, nsec2));
     printf("pos.x of first body is %f\n", _sel_VxA_([0], bodies).pos.x);
 
     return 0;
