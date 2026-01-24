@@ -236,7 +236,7 @@ int main()
     hull = QuickHull(P);
 
     sec2, nsec2 = MTClock::gettime();
-    printf("This took %fs\n", MTClock::timediff(sec1, nsec1, sec2, nsec2));
+    printf("This took %ds\n", MTClock::timediff(sec1, nsec1, sec2, nsec2));
     print(shape(hull));
 
     return 0;
