@@ -29,7 +29,7 @@ int main()
     c = matmul(a, b);
 
     sec2, nsec2 = MTClock::gettime();
-    printf("this took %fs\n", MTClock::timediff(sec1, nsec1, sec2, nsec2));
+    printf("this took %ds\n", MTClock::timediff(sec1, nsec1, sec2, nsec2));
     printf("c[0,0] is %f\n", c[0,0]);
 
     return 0;
