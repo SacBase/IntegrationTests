@@ -45,7 +45,7 @@ int main()
     y = FFT_2D(reshape([m, r], x));
 
     sec2, nsec2 = MTClock::gettime();
-    printf("This took %fs\n", MTClock::timediff(sec1, nsec1, sec2, nsec2));
+    printf("This took %ds\n", MTClock::timediff(sec1, nsec1, sec2, nsec2));
     printf("sum is %f\n", sum((double[+])y));
 
     return 0;
