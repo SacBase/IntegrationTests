@@ -334,7 +334,7 @@ int main()
     sec2, nsec2 = MTClock::gettime();
     time = MTClock::timediff(sec1, nsec1, sec2, nsec2);
     gb_needed = 1.333 * 4d * 8d * tod(N) * tod(N) * 1e-9;
-    printf("This took %fs at effective bandwidth %fGB/s\n", time, gb_needed / time);
+    printf("This took %ds at effective bandwidth %fGB/s\n", time, gb_needed / time);
 
     Utrue = { [i,j] -> u(a + tod(i) * h, a + tod(j) * h) | [i,j] < [N,N] };
     Utrue_red, Utrue_black = to_red_black(Utrue);
