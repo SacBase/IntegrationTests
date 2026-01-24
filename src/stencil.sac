@@ -39,8 +39,8 @@ int main()
     }
 
     sec2, nsec2 = MTClock::gettime();
-    printf("This took %fs\n", MTClock::timediff(sec1, nsec1, sec2, nsec2));
-    printf("arr[0,0] is %f\n", arr[0,0]);
+    printf("This took %ds\n", MTClock::timediff(sec1, nsec1, sec2, nsec2));
+    printf("arr[0,0] is %d\n", arr[0,0]);
 
     return 0;
 }
