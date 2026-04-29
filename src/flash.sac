@@ -64,7 +64,7 @@ int main()
 
     sec2, nsec2 = MTClock::gettime();
     printf("This took %ds\n", MTClock::timediff(sec1, nsec1, sec2, nsec2));
-    printf("l2norm is %f, should be %f\n", l2norm(O), Math::sqrt(tof(D*N)));
+    printf("l2norm is %f, should be %f\n", (double)l2norm(O), (double)Math::sqrt(tof(D*N)));
 
     return 0;
 }
