@@ -1,6 +1,0 @@
-{
-  "image": "sacbase/sac-compiler",
-  "runArgs": [
-    "--user", "1000:1000"
-  ]
-}
